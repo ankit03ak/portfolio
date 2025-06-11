@@ -74,11 +74,11 @@ export const EXPERIENCES = [
 
   
 export const CONTACT = {
-  address: "Milkipur Ayodhya, Uttar Pradesh 224164 ",
+  address: "Ayodhya, Uttar Pradesh 224164 ",
   phoneNo: "+91 8726685833 ",
   email1: "vickyak1339@gmail.com",
   email2: "ankit.2022ug1107@iiitranchi.ac.in",
-  linkedin: "https://www.linkedin.com/in/ankit-kumar-554316253",
+  linkedin: "http://www.linkedin.com/in/ankit-kumar-b2206436a",
   github: "https://github.com/ankit03ak",
   instagram:"https://www.instagram.com/vicky03__ak/?igshid=ZDdkNTZiNTM%3D",
   facebook:"https://www.facebook.com/profile.php?id=100014892287859",

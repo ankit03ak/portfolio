@@ -75,11 +75,11 @@ const Contact = () => {
 </p>
 
         <div className="flex justify-center gap-6 mt-6 text-2xl">
-          <a href={CONTACT.twitter} target="_blank" rel="noopener noreferrer">
-            <FaSquareXTwitter className="hover:text-blue-400 hover:scale-150 transition-all duration-200" />
-          </a>
           <a href={CONTACT.github} target="_blank" rel="noopener noreferrer">
             <FaGithub className="hover:text-gray-400 hover:scale-150 transition-all duration-200" />
+          </a>
+          <a href={CONTACT.twitter} target="_blank" rel="noopener noreferrer">
+            <FaSquareXTwitter className="hover:text-blue-400 hover:scale-150 transition-all duration-200" />
           </a>
           <a href={CONTACT.linkedin} target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="hover:text-blue-600 hover:scale-150 transition-all duration-200" />
