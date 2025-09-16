@@ -114,7 +114,7 @@ const Navbar = ({ scrollToProjects, scrollToContact }) => {
             >
               <span className="bg-gray-900 flex items-center text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 hover:shadow-lg transition">
               <FaProjectDiagram /> &nbsp;
-  My Projects
+  View My Work
 </span>
             </button>
             <a
@@ -125,8 +125,9 @@ const Navbar = ({ scrollToProjects, scrollToContact }) => {
             >
               <span className="bg-gray-900 flex items-center text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 hover:shadow-lg transition">
   
-              <FaRegEye /> &nbsp;
-View Resume
+              <FaRegEye /> 
+              &nbsp; 
+Resume
 </span>
             </a>
 

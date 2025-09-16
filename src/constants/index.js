@@ -1,9 +1,11 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
+import project6 from "../assets/projects/project-6.jpg";
 
-export const HERO_CONTENT = `I am a passionate full-stack developer with a strong foundation in crafting robust and scalable web applications. With hands-on experience in front-end technologies like React, Next.js, and back-end technologies such as Node.js, MongoDB, MySQL, and Cloudinary, I strive to create seamless user experiences. My goal is to leverage my diverse skills to create innovative solutions that drive user engagement and business growth.`;
+// export const HERO_CONTENT = `I am a passionate full-stack developer with a strong foundation in crafting robust and scalable web applications. With hands-on experience in front-end technologies like React, Next.js, and back-end technologies such as Node.js, MongoDB, MySQL, and Cloudinary, I strive to create seamless user experiences. My goal is to leverage my diverse skills to create innovative solutions that drive user engagement and business growth.`;
+export const HERO_CONTENT = `MERN Stack Developer | Building Fast, Modern Web Applications and Fixing Bugs Quickly | Passionate about Software Development | Problem Solver.`;
 
 
 export const ABOUT_TEXT = `I am an ambitious and dedicated full-stack developer, currently pursuing my B.Tech in Computer Science and Engineering at the Indian Institute of Information Technology, Ranchi. Over the years, I have gained practical experience working with various web technologies, including React, Next.js, Node.js, and MongoDB. I am passionate about software development and love creating efficient, user-centric applications. Outside of coding, I enjoy exploring new tech, contributing to open-source projects, and developing creative solutions to complex problems.`;
@@ -61,15 +63,41 @@ export const EXPERIENCES = [
         "Built a full-stack video streaming platform using React and Cloudinary for media storage. Integrated secure authentication with JWT and developed a movie management dashboard.",
       technologies: ["React", "Node.js", "JWT", "Cloudinary", "MongoDB"],
     },
-    {
-      title: "Portfolio Website",
-      repo:"https://github.com/ankit03ak/portfolio",
-      live:"https://ankitk-portfolio.vercel.app/",
-      image: project4,
-      description:
-        "A personal portfolio website showcasing projects, skills, and contact information, designed using React and TailwindCSS.",
-      technologies: ["React","TailwindCSS"],
-    },
+{
+  title: "Bad Body Posture Detection App",
+  repo: "https://github.com/ankit03ak/analyze-body-posture", // replace with your repo
+  live: "https://analyze-body-posture.vercel.app/", // replace if you deployed it
+  image: project5, // replace with actual image import
+  description:
+    "Built a full-stack posture detection system that analyzes body alignment from video using Mediapipe and OpenCV. The backend (Node.js, Express, Multer) processes video files and runs Python-based analysis, while the frontend (React) displays posture feedback.",
+  technologies: [
+    "React", 
+    "Node.js", 
+    "Express",
+    "Python", 
+    "OpenCV", 
+    "Mediapipe"
+  ],
+},
+{
+  title: "AI Love Chat App",
+  repo: "https://github.com/ankit03ak/chatbot", // replace with your repo link
+  live: "https://chatwithme-two.vercel.app/", // replace with your deployed link
+  image: project6, // replace with your imported image reference
+  description:
+    "Built a real-time chat interface with emoji picker, toast notifications, and love-themed UI. Integrated smooth UX features like click-outside-to-close emoji picker, gradient/faded background design, and floating effects for a lively chatting experience.",
+  technologies: ["React", "Tailwind CSS", "Emoji Picker", "Sonner", "JavaScript"]
+}
+
+    // {
+    //   title: "Portfolio Website",
+    //   repo:"https://github.com/ankit03ak/portfolio",
+    //   live:"https://ankitk-portfolio.vercel.app/",
+    //   image: project4,
+    //   description:
+    //     "A personal portfolio website showcasing projects, skills, and contact information, designed using React and TailwindCSS.",
+    //   technologies: ["React","TailwindCSS"],
+    // },
   ];
 
   
