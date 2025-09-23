@@ -101,6 +101,7 @@ export const EXPERIENCES = [
   ];
 
   
+  
 export const CONTACT = {
   address: "Ayodhya, Uttar Pradesh 224164 ",
   phoneNo: "+91 8726685833 ",
@@ -112,10 +113,33 @@ export const CONTACT = {
   facebook:"https://www.facebook.com/profile.php?id=100014892287859",
   skype:"https://join.skype.com/invite/uaRzMQcw4jXj",
   twitter:"https://x.com/AnkitKu54762704",
-  whatsapp: "https://wa.me/918726685833",
+  whatsapp: "https://wa.me/918726685833?text=Hello%20Developer%20:)",
   telegram: "https://t.me/nkitK",
   discord: "https://discord.com/users/ankitkumar1107"
 };
+
+export const EDUCATION = [
+  {
+    degree: "Bachelor of Technology (B.Tech)",
+    institute: "Indian Institute of Information Technology, Ranchi",
+    year: "2022 - 2026",
+    grade: "7.95 CGPA",
+  },
+  {
+    degree: "Senior Secondary (XII)",
+    institute: "ND DAV Public School Kumarganj, Ayodhya UP",
+    year: "2021",
+    grade: "89.00%",
+  },
+  {
+    degree: "High School (X)",
+    institute: "ND DAV Public School Kumarganj, Ayodhya UP",
+    year: "2019",
+    grade: "93.00%",
+  },
+];
+
+
 
 
 //now add photos screenshots and more stylish

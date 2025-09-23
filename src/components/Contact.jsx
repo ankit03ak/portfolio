@@ -76,36 +76,36 @@ const Contact = () => {
 
         <div className="flex justify-center gap-6 mt-6 text-2xl">
           <a href={CONTACT.github} target="_blank" rel="noopener noreferrer">
-            <FaGithub className="hover:text-gray-400 hover:scale-150 transition-all duration-200" />
+            <FaGithub className="text-gray-400 hover:scale-150 transition-all duration-200" />
           </a>
           <a href={CONTACT.twitter} target="_blank" rel="noopener noreferrer">
-            <FaSquareXTwitter className="hover:text-blue-400 hover:scale-150 transition-all duration-200" />
+            <FaSquareXTwitter className="text-blue-400 hover:scale-150 transition-all duration-200" />
           </a>
           <a href={CONTACT.linkedin} target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="hover:text-blue-600 hover:scale-150 transition-all duration-200" />
+            <FaLinkedin className="text-blue-600 hover:scale-150 transition-all duration-200" />
           </a>
           <a
             href={CONTACT.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-green-600 hover:scale-150 transition-all duration-200"
+            className="text-green-600 hover:scale-150 transition-all duration-200"
           >
             <FaWhatsapp />
           </a>
           <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="hover:text-pink-500 hover:scale-150 transition-all duration-200" />
+            <FaInstagram className="text-pink-500 hover:scale-150 transition-all duration-200" />
           </a>
           <a href={CONTACT.skype} target="_blank" rel="noopener noreferrer">
-            <FaSkype className="hover:text-sky-400 hover:scale-150 transition-all duration-200" />
+            <FaSkype className="text-sky-400 hover:scale-150 transition-all duration-200" />
           </a>
           <a href={CONTACT.facebook} target="_blank" rel="noopener noreferrer">
-            <FaFacebook className="hover:text-blue-700 hover:scale-150 transition-all duration-200" />
+            <FaFacebook className="text-blue-700 hover:scale-150 transition-all duration-200" />
           </a>
           <a
             href={CONTACT.telegram}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-500 hover:scale-150 transition-all duration-200"
+            className="text-blue-500 hover:scale-150 transition-all duration-200"
           >
             <FaTelegramPlane />
           </a>
@@ -113,7 +113,7 @@ const Contact = () => {
             href={CONTACT.discord}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-500 hover:scale-150 transition-all duration-150"
+            className="text-indigo-500 hover:scale-150 transition-all duration-150"
           >
             <FaDiscord />
           </a>

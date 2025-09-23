@@ -13,53 +13,85 @@ const Projects = () => {
       >
         Projects
       </motion.h1>
+
       <div>
         {PROJECTS.map((project, index) => (
-          <div className="mb-8 mt-25 flex flex-wrap lg:justify-between  ">
+          <div
+            key={index}
+            className="mb-16 flex flex-wrap lg:justify-between items-center"
+          >
+            {/* Project Screenshot */}
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1.0 }}
-              key={index}
-              className="w-full lg:w-1/2 mb-10 sm:mb-10"
+              className="w-full lg:w-1/2 mb-8"
             >
-              <img
-                src={project?.image}
-                height="full"
-                width={450}
-                className="mb-6 h-full object-cover"
-                alt={project?.title}
-              />
+              {/* Desktop: Hover Overlay */}
+              <div className="relative group hidden sm:block w-fit">
+                <img
+                  src={project?.image}
+                  alt={project?.title}
+                  className="w-[450px] h-full object-cover rounded-lg shadow-lg transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-lg">
+                  <div className="flex gap-4">
+                    <button
+                      onClick={() => window.open(project.repo, "_blank")}
+                      className="px-4 py-2 bg-cyan-600 text-white rounded-md hover:bg-cyan-700 transition"
+                    >
+                      View Code
+                    </button>
+                    <button
+                      onClick={() => window.open(project.live, "_blank")}
+                      className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile: Show buttons below image */}
+              <div className="sm:hidden">
+                <img
+                  src={project?.image}
+                  alt={project?.title}
+                  className="w-full object-cover rounded-lg shadow-lg mb-4"
+                />
+                <div className="flex gap-4">
+                  <button
+                    onClick={() => window.open(project.repo, "_blank")}
+                    className="flex-1 px-4 py-2 bg-cyan-600 text-white rounded-md hover:bg-cyan-700 transition"
+                  >
+                    View Code
+                  </button>
+                  <button
+                    onClick={() => window.open(project.live, "_blank")}
+                    className="flex-1 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
             </motion.div>
+
+            {/* Project Info */}
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1.0 }}
               className="w-full max-w-xl lg:w-1/2"
             >
-              <h6 className="mb-2 font-semibold text-2xl">{project?.title}</h6>
-              <div className="flex mb-5">
-                <button
-                  className="bg-red-600 text-white border border-red-700 rounded-md px-2 py-2"
-                  onClick={() => window.open(project.repo)}
-                >
-                  Github Repo
-                </button>
-                <button
-                  className="bg-red-600 text-white border border-red-700 rounded-md px-2 py-2 ml-5"
-                  onClick={() => window.open(project.live)}
-                >
-                  Live link
-                </button>
-              </div>
-              <p className="mb-4 text-neutral-400 text-xl">
+              <h6 className="mb-3 font-semibold text-2xl">{project?.title}</h6>
+              <p className="mb-6 text-neutral-400 text-lg">
                 {project?.description}
               </p>
-              <div className="flex flex-wrap gap-y-2">
+              <div className="flex flex-wrap gap-2">
                 {project.technologies?.map((tech, index) => (
                   <span
                     key={index}
-                    className="mr-2 rounded bg-neutral-900 px-2 py-1 font-medium text-green-500 text-xl"
+                    className="rounded bg-neutral-900 px-3 py-1 font-medium text-green-500 text-sm"
                   >
                     {tech}
                   </span>

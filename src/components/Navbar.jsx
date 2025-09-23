@@ -53,7 +53,8 @@ const Navbar = ({ scrollToProjects, scrollToContact }) => {
 
 
   return (
-    <nav className="fixed top-0 left-0 w-full text-white shadow-md z-50 h-16 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
+    <nav className="fixed top-0 left-0 w-full text-white shadow-md z-50 h-16 bg-[#000000] bg-gradient-to-r bg-[size:20px_20px]">
+      
       
       <div className="flex items-center justify-end px-6 py-4">
         
