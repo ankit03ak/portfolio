@@ -1,10 +1,23 @@
 import { animate, motion } from "framer-motion";
 import React from "react";
-import { FaNodeJs } from "react-icons/fa6";
+import { FaChartSimple, FaNodeJs } from "react-icons/fa6";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaReact, FaJs, FaGithub, FaCuttlefish } from "react-icons/fa";
-import { SiMysql, SiPostman, SiMongodb, SiExpress, SiMongoose, SiCplusplus } from "react-icons/si";
+import {
+  SiMysql,
+  SiPostman,
+  SiMongodb,
+  SiExpress,
+  SiMongoose,
+  SiCplusplus,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiPrisma,
+  SiSupabase,
+  SiClerk,
+  SiCloudinary,
+} from "react-icons/si";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -46,12 +59,12 @@ const Technologies = () => {
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
-          variants={iconVariants(3)}
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <TbBrandNextjs className="text-7xl " />
+          <SiNextdotjs className="text-7xl text-white" />
         </motion.div>
         <motion.div
           variants={iconVariants(4)}
@@ -83,7 +96,6 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-      
           <SiMysql className="text-7xl text-blue-500" />
         </motion.div>
         <motion.div
@@ -110,6 +122,45 @@ const Technologies = () => {
         >
           <SiCplusplus className="text-7xl text-blue-500" />
         </motion.div>
+
+        <motion.div
+          variants={iconVariants(9)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiCloudinary className="text-7xl text-blue-400" />
+        </motion.div>
+
+
+        <motion.div
+          variants={iconVariants(7)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiClerk className="text-7xl text-purple-400" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiSupabase className="text-7xl text-emerald-400" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiPrisma className="text-7xl text-green-500" />
+        </motion.div>
+
+
 
         {/* <motion.div
           variants={iconVariants(6)}
