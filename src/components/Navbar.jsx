@@ -176,7 +176,7 @@ Resume
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-cyan-300 transition"
           >
-            <FaEye /> View Resume
+            <FaEye /> Resume
           </a>
 
           <a
@@ -184,14 +184,14 @@ Resume
             download
             className="flex items-center gap-2 hover:text-cyan-300 transition"
           >
-            <FaDownload /> Download
+            <FaDownload /> Resume
           </a>
 
           <a
             href="mailto:vickyak1339@gmail.com"
             className="flex items-center gap-2 hover:text-cyan-300 transition"
           >
-            <FaEnvelope /> Shoot Me an Email
+            <FaEnvelope /> Email Me
           </a>
 
           <button

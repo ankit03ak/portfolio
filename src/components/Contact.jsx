@@ -23,8 +23,9 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.0 }}
-        className="my-10 text-center text-4xl"
-      >
+        className="my-10 text-center text-4xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+>
+
         Get in touch
       </motion.h1>
       <motion.div
