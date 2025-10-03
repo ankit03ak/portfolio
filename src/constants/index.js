@@ -3,6 +3,8 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
+import project7 from "../assets/projects/project-7.jpg";
+import project8 from "../assets/projects/project-8.jpg";
 
 // export const HERO_CONTENT = `I am a passionate full-stack developer with a strong foundation in crafting robust and scalable web applications. With hands-on experience in front-end technologies like React, Next.js, and back-end technologies such as Node.js, MongoDB, MySQL, and Cloudinary, I strive to create seamless user experiences. My goal is to leverage my diverse skills to create innovative solutions that drive user engagement and business growth.`;
 export const HERO_CONTENT = `MERN Stack Developer | Building Fast, Modern Web Applications and Fixing Bugs Quickly | Passionate about Software Development | Problem Solver.`;
@@ -36,16 +38,18 @@ export const EXPERIENCES = [
   ];
   
   export const PROJECTS = [
+
     {
-      title: "Live Cricket Score App",
-      repo:"https://github.com/ankit03ak/live-cricket-score",
-      live:"https://live-cric-score.vercel.app/",
-      image: project1,
-      description:
-        "Developed a real-time cricket score tracking web app with live user count monitoring using Socket.IO. Integrated live score updates and deployed the frontend on Vercel and backend on Render.",
-      technologies: ["React", "Vite", "Socket.IO", "Node.js", "Axios"],
-    },
-    {
+  title: "BudgetIQ - AI Powered Expense Tracker",
+  repo: "https://github.com/ankit03ak/expense-tracker",
+  live: "https://budget-iq-gray.vercel.app/",
+  image: project7,
+  description:
+    "Developed a full-stack expense tracker with Next.js, Supabase, and Prisma. Integrated AI-powered receipt scanning, secure authentication with Clerk, and dynamic dashboards using Recharts.",
+  technologies: ["Next.js", "React", "Tailwind CSS", "Prisma", "Supabase", "Clerk", "Recharts", "Inngest", "Resend"],
+},
+
+      {
       title: "Social Media Platform",
       repo:"https://github.com/ankit03ak/deploy-social-media",
       live:"https://deploy-social-media-ui1.vercel.app/",
@@ -54,6 +58,7 @@ export const EXPERIENCES = [
         "Created a full-stack social media platform with real-time messaging and user profiles. Integrated real-time messaging using Socket.IO and deployed the backend on Render for scalability.",
       technologies: ["React", "Node.js", "Socket.IO", "MongoDB", "Render"],
     },
+
     {
       title: "Netflix-Inspired Streaming Platform",
       repo:"https://github.com/ankit03ak/full-stack-netflixClone",
@@ -62,6 +67,15 @@ export const EXPERIENCES = [
       description:
         "Built a full-stack video streaming platform using React and Cloudinary for media storage. Integrated secure authentication with JWT and developed a movie management dashboard.",
       technologies: ["React", "Node.js", "JWT", "Cloudinary", "MongoDB"],
+    },
+        {
+      title: "Live Cricket Score App",
+      repo:"https://github.com/ankit03ak/live-cricket-score",
+      live:"https://live-cric-score.vercel.app/",
+      image: project1,
+      description:
+        "Developed a real-time cricket score tracking web app with live user count monitoring using Socket.IO. Integrated live score updates and deployed the frontend on Vercel and backend on Render.",
+      technologies: ["React", "Vite", "Socket.IO", "Node.js", "Axios"],
     },
 {
   title: "Bad Body Posture Detection App",
@@ -80,7 +94,17 @@ export const EXPERIENCES = [
   ],
 },
 {
-  title: "AI Love Chat App",
+  title: "Chauhan Ready Made Center - Clothing Catalog Website",
+  repo: "https://github.com/ankit03ak/clothShop-for-friend",
+  live: "https://chauhan-vastralaya.vercel.app/",
+  image: project8,
+  description:
+    "Built a product catalog website for a local clothing shop, allowing customers to browse available items with details like price, size, color, and availability. Designed with a clean UI for easy navigation and optimized for responsive display.",
+  technologies: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Cloudinary"],
+},
+
+{
+  title: "AI Chat App",
   repo: "https://github.com/ankit03ak/chatbot", // replace with your repo link
   live: "https://chatwithme-two.vercel.app/", // replace with your deployed link
   image: project6, // replace with your imported image reference

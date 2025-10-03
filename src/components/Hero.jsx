@@ -22,13 +22,13 @@ const Hero = () => {
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
             <motion.h1
-              variants={container(0)}
-              initial="hidden"
-              animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
-            >
-              Ankit Kumar
-            </motion.h1>
+  variants={container(0)}
+  initial="hidden"
+  animate="visible"
+  className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+>
+  Ankit Kumar
+</motion.h1>
             <motion.span
               variants={container(0.3)}
               initial={{ opacity: 0 }}
