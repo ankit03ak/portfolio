@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { HERO_CONTENT } from "../constants";
 // import logo from "../assets/logo.png";
 import profile_pic from "../assets/profile_pic.png";
-import profile_pic2 from "../assets/profile_pic2.jpg";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
