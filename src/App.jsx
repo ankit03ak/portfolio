@@ -32,6 +32,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Background from "./components/Background"; // ✅ import background
+import Chatbot from "./components/ChatBot";
 
 const App = () => {
   const projectsRef = useRef(null);
@@ -62,6 +63,7 @@ const App = () => {
         </div>
         <div ref={contactRef}>
           <Contact />
+          <Chatbot />
         </div>
       </div>
     </div>
