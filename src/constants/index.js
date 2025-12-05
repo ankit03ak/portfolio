@@ -5,6 +5,7 @@ import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
 import project8 from "../assets/projects/project-8.jpg";
+import project9 from "../assets/projects/project-9.jpg";
 
 // export const HERO_CONTENT = `I am a passionate full-stack developer with a strong foundation in crafting robust and scalable web applications. With hands-on experience in front-end technologies like React, Next.js, and back-end technologies such as Node.js, MongoDB, MySQL, and Cloudinary, I strive to create seamless user experiences. My goal is to leverage my diverse skills to create innovative solutions that drive user engagement and business growth.`;
 export const HERO_CONTENT = `MERN Stack Developer | Building Fast, Modern Web Applications and Fixing Bugs Quickly | Passionate about Software Development | Problem Solver.`;
@@ -48,6 +49,15 @@ export const EXPERIENCES = [
     "Developed a full-stack expense tracker with Next.js, Supabase, and Prisma. Integrated AI-powered receipt scanning, secure authentication with Clerk, and dynamic dashboards using Recharts.",
   technologies: ["Next.js", "React", "Tailwind CSS", "Prisma", "Supabase", "Clerk", "Recharts", "Inngest", "Resend"],
 },
+{
+  title: "Learning Management System (LMS)",
+  repo:"https://github.com/ankit03ak/learning-management-system",
+  live:"https://lms-advanced-dun.vercel.app",              
+  image: project9,                                    
+  description:
+    "Developed a full-stack LMS for course creation, enrollment, media handling, and PayPal payments. Implemented secure authentication, instructor dashboards, and Cloudinary media uploads for optimized learning experience.",
+  technologies: ["React", "Node.js", "MongoDB", "Cloudinary", "PayPal", "Render"],
+},
 
       {
       title: "Social Media Platform",
@@ -77,22 +87,22 @@ export const EXPERIENCES = [
         "Developed a real-time cricket score tracking web app with live user count monitoring using Socket.IO. Integrated live score updates and deployed the frontend on Vercel and backend on Render.",
       technologies: ["React", "Vite", "Socket.IO", "Node.js", "Axios"],
     },
-{
-  title: "Bad Body Posture Detection App",
-  repo: "https://github.com/ankit03ak/analyze-body-posture", // replace with your repo
-  live: "https://analyze-body-posture.vercel.app/", // replace if you deployed it
-  image: project5, // replace with actual image import
-  description:
-    "Built a full-stack posture detection system that analyzes body alignment from video using Mediapipe and OpenCV. The backend (Node.js, Express, Multer) processes video files and runs Python-based analysis, while the frontend (React) displays posture feedback.",
-  technologies: [
-    "React", 
-    "Node.js", 
-    "Express",
-    "Python", 
-    "OpenCV", 
-    "Mediapipe"
-  ],
-},
+// {
+//   title: "Bad Body Posture Detection App",
+//   repo: "https://github.com/ankit03ak/analyze-body-posture", // replace with your repo
+//   live: "https://analyze-body-posture.vercel.app/", // replace if you deployed it
+//   image: project5, // replace with actual image import
+//   description:
+//     "Built a full-stack posture detection system that analyzes body alignment from video using Mediapipe and OpenCV. The backend (Node.js, Express, Multer) processes video files and runs Python-based analysis, while the frontend (React) displays posture feedback.",
+//   technologies: [
+//     "React", 
+//     "Node.js", 
+//     "Express",
+//     "Python", 
+//     "OpenCV", 
+//     "Mediapipe"
+//   ],
+// },
 {
   title: "Chauhan Ready Made Center - Clothing Catalog Website",
   repo: "https://github.com/ankit03ak/clothShop-for-friend",

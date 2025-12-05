@@ -170,8 +170,8 @@ Assistant:
       <motion.button
         onClick={toggleOpen}
         className="group fixed bottom-5 left-5 z-40 flex h-12 w-12 items-center justify-center 
-             rounded-full bg-orange-400 text-slate-950 shadow-lg shadow-orange-400/50 
-             hover:bg-orange-500 transition-colors"
+             rounded-full bg-green-400 text-slate-950 shadow-lg shadow-green-400/50 
+             hover:bg-green-500 transition-colors"
         animate={{ y: [0, -3, 0] }}
         transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
         whileTap={{ scale: 0.9 }}
