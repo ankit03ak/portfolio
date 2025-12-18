@@ -50,7 +50,7 @@ export const EXPERIENCES = [
   technologies: ["Next.js", "React", "Tailwind CSS", "Prisma", "Supabase", "Clerk", "Recharts", "Inngest", "Resend"],
 },
 {
-  title: "Learning Management System (LMS)",
+  title: "LearnSphere - A Learning Management System",
   repo:"https://github.com/ankit03ak/learning-management-system",
   live:"https://lms-advanced-dun.vercel.app",              
   image: project9,                                    
@@ -60,7 +60,7 @@ export const EXPERIENCES = [
 },
 
       {
-      title: "Social Media Platform",
+      title: "Socio Zone - A Social Media Application",
       repo:"https://github.com/ankit03ak/deploy-social-media",
       live:"https://deploy-social-media-ui1.vercel.app/",
       image: project2,
@@ -70,7 +70,7 @@ export const EXPERIENCES = [
     },
 
     {
-      title: "Netflix-Inspired Streaming Platform",
+      title: "StreamMora - A Netflix-Inspired Streaming Platform",
       repo:"https://github.com/ankit03ak/full-stack-netflixClone",
       live:"https://deploy-netflix-ui01.vercel.app/",
       image: project3,
@@ -79,7 +79,7 @@ export const EXPERIENCES = [
       technologies: ["React", "Node.js", "JWT", "Cloudinary", "MongoDB"],
     },
         {
-      title: "Live Cricket Score App",
+      title: "Falcons-Cricket - Live Cricket Score App",
       repo:"https://github.com/ankit03ak/live-cricket-score",
       live:"https://live-cric-score.vercel.app/",
       image: project1,
