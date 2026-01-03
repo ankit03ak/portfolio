@@ -4,101 +4,74 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div id="projects" className="border-b border-neutral-900 pb-4">
+    <div id="projects" className="border-b border-neutral-900 pb-20">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.0 }}
-        className="my-20 text-center text-4xl"
+        initial={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.8, type: "spring" }}
+        className="my-20 text-center text-4xl font-light tracking-tight text-white"
       >
         Projects
       </motion.h1>
 
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {PROJECTS.map((project, index) => (
-          <div
+          <motion.div
             key={index}
-            className="mb-16 flex flex-wrap lg:justify-between items-center"
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileHover={{ y: -10, transition: { duration: 0.3 } }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="group relative flex flex-col justify-between overflow-hidden rounded-2xl bg-neutral-900/50 p-6 backdrop-blur-md border border-neutral-800 shadow-lg hover:shadow-cyan-500/10 hover:border-cyan-500/30 transition-all duration-300"
           >
-            {/* Project Screenshot */}
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1.0 }}
-              className="w-full lg:w-1/2 mb-8"
-            >
-              {/* Desktop: Hover Overlay */}
-              <div className="relative group hidden sm:block w-fit">
-                <img
-                  src={project?.image}
-                  alt={project?.title}
-                  className="w-[450px] h-full object-cover rounded-lg shadow-lg transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl"
-                />
-                <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-lg">
-                  <div className="flex gap-4">
-                    <button
-                      onClick={() => window.open(project.repo, "_blank")}
-                      className="px-4 py-2 bg-cyan-600 text-white rounded-md hover:bg-cyan-700 transition"
-                    >
-                      View Code
-                    </button>
-                    <button
-                      onClick={() => window.open(project.live, "_blank")}
-                      className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition"
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
+            <div className="relative mb-4 h-48 w-full overflow-hidden rounded-xl">
+              <img
+                src={project?.image}
+                alt={project?.title}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              
+              
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-neutral-100 text-neutral-900 rounded-lg text-sm font-semibold hover:bg-white transition-colors"
+                >
+                  Code
+                </a>
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-cyan-500 text-white rounded-lg text-sm font-semibold hover:bg-cyan-400 transition-colors"
+                >
+                  Demo
+                </a>
               </div>
+            </div>
 
-              {/* Mobile: Show buttons below image */}
-              <div className="sm:hidden">
-                <img
-                  src={project?.image}
-                  alt={project?.title}
-                  className="w-full object-cover rounded-lg shadow-lg mb-4"
-                />
-                <div className="flex gap-4">
-                  <button
-                    onClick={() => window.open(project.repo, "_blank")}
-                    className="flex-1 px-4 py-2 bg-cyan-600 text-white rounded-md hover:bg-cyan-700 transition"
-                  >
-                    View Code
-                  </button>
-                  <button
-                    onClick={() => window.open(project.live, "_blank")}
-                    className="flex-1 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition"
-                  >
-                    Live Demo
-                  </button>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Project Info */}
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1.0 }}
-              className="w-full max-w-xl lg:w-1/2"
-            >
-              <h6 className="mb-3 font-semibold text-2xl">{project?.title}</h6>
-              <p className="mb-6 text-neutral-400 text-lg">
-                {project?.description}
+            <div className="flex flex-col flex-grow">
+              <h3 className="mb-2 text-xl font-bold text-neutral-100 group-hover:text-cyan-400 transition-colors">
+                {project.title}
+              </h3>
+              <p className="mb-4 text-sm text-neutral-400 line-clamp-3">
+                {project.description}
               </p>
-              <div className="flex flex-wrap gap-2">
-                {project.technologies?.map((tech, index) => (
+              
+              <div className="mt-auto flex flex-wrap gap-2">
+                {project.technologies.map((tech, idx) => (
                   <span
-                    key={index}
-                    className="rounded bg-neutral-900 px-3 py-1 font-medium text-green-500 text-sm"
+                    key={idx}
+                    className="rounded-full bg-cyan-900/30 px-3 py-1 text-xs font-medium text-cyan-500 border border-cyan-900/50"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         ))}
       </div>
     </div>

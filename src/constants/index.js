@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
-import project5 from "../assets/projects/project-5.jpg";
+
 import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
 import project8 from "../assets/projects/project-8.jpg";
@@ -16,26 +16,33 @@ export const ABOUT_TEXT = `I am an ambitious and dedicated full-stack developer,
 
 export const EXPERIENCES = [
     {
-      year: "2024 - Present",
-      role: "Full Stack Developer (Freelancer)",
-      company: "Self-employed",
-      description: `Developed a social media platform with real-time messaging, leveraging technologies like React, Node.js, and Socket.IO for real-time communication. Deployed the backend on Render, ensuring scalability and security.`,
-      technologies: ["React", "Node.js", "Socket.IO", "MongoDB", "Render"],
+      year: "Dec 2025 - Present",
+      role: "Frontend Developer Intern",
+      company: "Better Best Software Solutions",
+      description: `Working on frontend development using React.js to build and enhance user interfaces. Assisting in implementing reusable UI components and maintaining the existing codebase. Collaborating with the team to understand requirements and integrate frontend with backend APIs. Debugging UI issues and improving responsiveness across different devices.`,
+      technologies: ["React.js", "Javascript", "Tailwind CSS", "API Integration"],
     },
-    {
-      year: "2024",
-      role: "Full Stack Developer (Freelancer)",
-      company: "Self-employed",
-      description: `Developed a Netflix-inspired streaming platform with a user-friendly interface using React, Cloudinary for media storage, and secure authentication with JWT. Deployed the platform on Render for reliability and performance.`,
-      technologies: ["React", "Node.js", "JWT", "Cloudinary", "MongoDB"],
-    },
-    {
-      year: "2023 - 2024",
-      role: "Full Stack Developer",
-      company: "Self-employed",
-      description: `Led the development of a real-time live cricket score tracking web app using Socket.IO. Integrated live score updates via an external API and deployed the app with Vercel for fast performance.`,
-      technologies: ["React", "Vite", "Socket.IO", "Node.js", "Axios"],
-    },
+    // {
+    //   year: "2024 - Present",
+    //   role: "Full Stack Developer (Freelancer)",
+    //   company: "Self-employed",
+    //   description: `Developed a social media platform with real-time messaging, leveraging technologies like React, Node.js, and Socket.IO for real-time communication. Deployed the backend on Render, ensuring scalability and security.`,
+    //   technologies: ["React", "Node.js", "Socket.IO", "MongoDB", "Render"],
+    // },
+    // {
+    //   year: "2024",
+    //   role: "Full Stack Developer (Freelancer)",
+    //   company: "Self-employed",
+    //   description: `Developed a Netflix-inspired streaming platform with a user-friendly interface using React, Cloudinary for media storage, and secure authentication with JWT. Deployed the platform on Render for reliability and performance.`,
+    //   technologies: ["React", "Node.js", "JWT", "Cloudinary", "MongoDB"],
+    // },
+    // {
+    //   year: "2023 - 2024",
+    //   role: "Full Stack Developer",
+    //   company: "Self-employed",
+    //   description: `Led the development of a real-time live cricket score tracking web app using Socket.IO. Integrated live score updates via an external API and deployed the app with Vercel for fast performance.`,
+    //   technologies: ["React", "Vite", "Socket.IO", "Node.js", "Axios"],
+    // },
   ];
   
   export const PROJECTS = [
@@ -87,22 +94,7 @@ export const EXPERIENCES = [
         "Developed a real-time cricket score tracking web app with live user count monitoring using Socket.IO. Integrated live score updates and deployed the frontend on Vercel and backend on Render.",
       technologies: ["React", "Vite", "Socket.IO", "Node.js", "Axios"],
     },
-// {
-//   title: "Bad Body Posture Detection App",
-//   repo: "https://github.com/ankit03ak/analyze-body-posture", // replace with your repo
-//   live: "https://analyze-body-posture.vercel.app/", // replace if you deployed it
-//   image: project5, // replace with actual image import
-//   description:
-//     "Built a full-stack posture detection system that analyzes body alignment from video using Mediapipe and OpenCV. The backend (Node.js, Express, Multer) processes video files and runs Python-based analysis, while the frontend (React) displays posture feedback.",
-//   technologies: [
-//     "React", 
-//     "Node.js", 
-//     "Express",
-//     "Python", 
-//     "OpenCV", 
-//     "Mediapipe"
-//   ],
-// },
+
 {
   title: "Chauhan Ready Made Center - Clothing Catalog Website",
   repo: "https://github.com/ankit03ak/clothShop-for-friend",
@@ -115,23 +107,15 @@ export const EXPERIENCES = [
 
 {
   title: "AI Chat App",
-  repo: "https://github.com/ankit03ak/chatbot", // replace with your repo link
-  live: "https://chatwithme-two.vercel.app/", // replace with your deployed link
-  image: project6, // replace with your imported image reference
+  repo: "https://github.com/ankit03ak/chatbot", 
+  live: "https://chatwithme-two.vercel.app/", 
+  image: project6, 
   description:
     "Built a real-time chat interface with emoji picker, toast notifications, and love-themed UI. Integrated smooth UX features like click-outside-to-close emoji picker, gradient/faded background design, and floating effects for a lively chatting experience.",
   technologies: ["React", "Tailwind CSS", "Emoji Picker", "Sonner", "JavaScript"]
 }
 
-    // {
-    //   title: "Portfolio Website",
-    //   repo:"https://github.com/ankit03ak/portfolio",
-    //   live:"https://ankitk-portfolio.vercel.app/",
-    //   image: project4,
-    //   description:
-    //     "A personal portfolio website showcasing projects, skills, and contact information, designed using React and TailwindCSS.",
-    //   technologies: ["React","TailwindCSS"],
-    // },
+
   ];
 
   
@@ -147,7 +131,7 @@ export const CONTACT = {
   facebook:"https://www.facebook.com/profile.php?id=100014892287859",
   skype:"https://join.skype.com/invite/uaRzMQcw4jXj",
   twitter:"https://x.com/AnkitKu54762704",
-  whatsapp: "https://wa.me/918726685833?text=Hello%20Developer%20:)",
+  whatsapp: "https://wa.me/918726685833?text=Hello%20Developer%2C%20this%20is%20Ankit%20:)",
   telegram: "https://t.me/nkitK",
   discord: "https://discord.com/users/ankitkumar1107"
 };
@@ -176,4 +160,3 @@ export const EDUCATION = [
 
 
 
-//now add photos screenshots and more stylish

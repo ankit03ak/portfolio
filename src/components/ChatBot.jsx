@@ -77,7 +77,7 @@ const MODE_SYSTEM_TEXT = {
     "You are Ankit's AI mentor. Use his background, education, and projects to give career and learning guidance. Be supportive and practical.",
 };
 
-const apiKey = `${import.meta.env.VITE_GEMINI_API_KEY}`;
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
 if (!apiKey) {
   console.log(
